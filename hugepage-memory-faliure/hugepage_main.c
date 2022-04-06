@@ -12,8 +12,9 @@
 
 #define FILE_NAME "/mnt/hugepage/hugepagefile"
 #define LEN (1024UL * 1024 * 1024)
+#define MAP_HUGE_1GB    (30 << MAP_HUGE_SHIFT)
 #define PROTECTION (PROT_READ | PROT_WRITE)
-#define FLAGS (MAP_SHARED)
+#define FLAGS (MAP_SHARED | MAP_HUGETLB | MAP_HUGE_1GB)
 // Bits 0-54  page frame number (PFN) if present
 #define PM_PFRAME_MASK (0x007fffffffffffffull)
 #define PAGE_PRESENT (1ull << 63)
@@ -53,6 +54,7 @@ int main(void)
 {
 	void *addr;
 	int fd, ret;
+	char c;
 	unsigned long long phys;
 	pagesize = getpagesize();
 
@@ -68,6 +70,10 @@ int main(void)
 		unlink(FILE_NAME);
 		exit(1);
 	}
+
+	// read make this page present
+	c = *(volatile char *)addr;
+	printf("Read the first char is %c\n", c);
 
 	// get the first pfn of the 1GB hugepage
 	phys = vtop((unsigned long long)addr);
