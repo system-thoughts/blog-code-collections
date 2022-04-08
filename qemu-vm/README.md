@@ -17,13 +17,14 @@ make install
 mkdir initramfs
 cd initramfs
 cp ../_install/* -rf ./
-mkdir dev proc sys
+mkdir dev proc sys share
 cp -a /dev/{null,console,tty,tty1,tty2,tty3,tty4} dev/
 
 cat << EOF > init
 #!/bin/busybox sh
 mount -t proc none /proc
 mount -t sysfs none /sys
+mount -t 9p -o trans=virtio,version=9p2000.L hostshare /share
 
 exec /sbin/init
 EOF
@@ -71,3 +72,9 @@ ${QEMU} -kernel ${KERNEL} -initrd ${INITRAMFS} \
 	-fsdev local,security_model=passthrough,id=fsdev0,path=${SHARED_DIR}	\
 	-device virtio-9p-pci,id=fs0,fsdev=fsdev0,mount_tag=hostshare
 ```
+
+进入系统后，执行:
+```bash
+mount -t 9p -o trans=virtio,version=9p2000.L hostshare /share
+```
+如果已经在`init`脚本中执行挂载操作，则忽略此步
