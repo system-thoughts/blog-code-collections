@@ -78,3 +78,9 @@ ${QEMU} -kernel ${KERNEL} -initrd ${INITRAMFS} \
 mount -t 9p -o trans=virtio,version=9p2000.L hostshare /share
 ```
 如果已经在`init`脚本中执行挂载操作，则忽略此步
+
+# Reference
+* https://bugs.launchpad.net/qemu/+bug/1414466
+* https://www.vinnie.work/blog/2021-01-16-why-so-hard-qemu-user-network-and-busybox/
+* https://wiki.qemu.org/Documentation/Networking
+* https://github.com/OP-TEE/build/issues/103
