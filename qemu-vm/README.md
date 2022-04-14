@@ -84,3 +84,7 @@ mount -t 9p -o trans=virtio,version=9p2000.L hostshare /share
 * https://www.vinnie.work/blog/2021-01-16-why-so-hard-qemu-user-network-and-busybox/
 * https://wiki.qemu.org/Documentation/Networking
 * https://github.com/OP-TEE/build/issues/103
+* https://github.com/wupanhao/wupanhao.github.io/issues/15
+* https://bitfab.org/dropbear-static-builds/
+* https://githubhot.com/repo/ludwig-v/wireless-carplay-dongle-reverse-engineering/issues/4
+* https://www.cnblogs.com/zackary/p/13940504.html
