@@ -1,1 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2022-11-14T00:14:43.325Z" agent="5.0 (X11)" version="20.5.3" etag="HrpWAGX3iu3flLWu__Ul" type="github"><diagram id="7V-S8SnR5zC5HYMFqcfr">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-14T00:34:13.192Z" agent="5.0 (X11)" etag="ayJqmRzi7JUDC6M4RajI" version="20.5.3" type="github">
+  <diagram id="7V-S8SnR5zC5HYMFqcfr" name="Page-1">
+    <mxGraphModel dx="1550" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=18;entryX=-0.025;entryY=0.048;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="ErsPlG-VnDmUJLIbp3NH-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="156" as="sourcePoint" />
+            <mxPoint x="570" y="156" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontSize=16;" edge="1" parent="1" source="ErsPlG-VnDmUJLIbp3NH-2" target="ErsPlG-VnDmUJLIbp3NH-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="510" />
+              <mxPoint x="440" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Lucida Console&quot;&gt;browser&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="130" width="120" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;fontSize=18;exitX=-0.008;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ErsPlG-VnDmUJLIbp3NH-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="292" as="sourcePoint" />
+            <mxPoint x="180" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Lucida Console&quot;&gt;web server&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="130" width="120" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-6" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Comic Sans MS&quot;&gt;GET https://www.example.com/ HTTP/1.1 &lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=18;dashed=1;fillColor=#E3E3E3;align=left;" vertex="1" parent="1">
+          <mxGeometry x="190" y="170" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-8" value="&lt;div align=&quot;left&quot;&gt;&lt;pre class=&quot;brush: http notranslate&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;code&gt;&lt;span class=&quot;token response-status&quot;&gt;&lt;span class=&quot;token http-version property&quot;&gt;HTTP/1.1&lt;/span&gt; &lt;span class=&quot;token status-code number&quot;&gt;200&lt;/span&gt; &lt;span class=&quot;token reason-phrase string&quot;&gt;OK&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-name keyword&quot;&gt;Content-type&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token header-value&quot;&gt;text/html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-name keyword&quot;&gt;Set-Cookie&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token header-value&quot;&gt;foo_cookie=choco&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-name keyword&quot;&gt;Set-Cookie&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token header-value&quot;&gt;bar_cookie=cola&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token text-html&quot;&gt;&lt;br&gt;[page content]&lt;/span&gt;&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=18;dashed=1;fillColor=#E3E3E3;align=left;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="290" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ErsPlG-VnDmUJLIbp3NH-10" value="&lt;div class=&quot;code-example&quot; align=&quot;left&quot;&gt;&lt;pre class=&quot;brush: http notranslate&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;code&gt;&lt;span class=&quot;token request-line&quot;&gt;&lt;span class=&quot;token method property&quot;&gt;GET&lt;/span&gt; &lt;span class=&quot;token request-target url&quot;&gt;&lt;span class=&quot;token path&quot;&gt;&lt;span class=&quot;token path-separator&quot;&gt;/&lt;/span&gt;sample_page.html&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token http-version property&quot;&gt;HTTP/1.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-name keyword&quot;&gt;Host&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token header-value&quot;&gt;www.example.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-name keyword&quot;&gt;Cookie&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token header-value&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;code&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-value&quot;&gt;foo_cookie=choco&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;code&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-value&quot;&gt;; &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;code&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token header-value&quot;&gt;bar_cookie=cola&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=18;dashed=1;fillColor=#E3E3E3;align=left;" vertex="1" parent="1">
+          <mxGeometry x="190" y="520" width="410" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
